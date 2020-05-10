@@ -1,6 +1,7 @@
 class Question {
-    constructor(name) {
+    constructor(name, theme) {
         this.name = name;
+        this.theme = theme;
         AppContainer.questions.push(this);
     
     }
