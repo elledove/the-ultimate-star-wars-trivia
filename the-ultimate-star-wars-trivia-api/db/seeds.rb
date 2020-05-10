@@ -6,9 +6,18 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Theme.destroy_all
+Question.destroy_all
 
-Question.create(name: "What is the first Star Wars movie to debut & what year?")
-Question.create(name: "What species is Jabba Desilijic Tiure?")
+
+person = Theme.create(name: "person")
+films = Theme.create(name: "films")
+
+
+
+
+Question.create(name: "What is the first Star Wars movie to debut & what year?", theme: films)
+Question.create(name: "What species is Jabba Desilijic Tiure?", theme: person)
 Question.create(name: "In which movie does Princess Lea say these iconic lines?")
 Question.create(name: "What planet was Anakin discovered on?")
-Question.create(name: "What is the Force?") 
+Question.create(name: "What is the Force?")    
