@@ -1,2 +1,3 @@
-const app = new AppContainer
-app.getQuestions()
+const app = new AppContainer;
+app.getQuestions();
+app.bindEventListener();
