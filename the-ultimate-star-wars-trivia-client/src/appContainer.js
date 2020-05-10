@@ -1,6 +1,6 @@
 class AppContainer{
 
-    questions = [];
+   static questions = [];
     themes = [];
     url = "http://localhost:3000";
    score = {};
@@ -18,7 +18,8 @@ class AppContainer{
 
    };
    getPersonQuestions(){
-     console.log("testing cheeky monkey")
+     //console.log("testing cheeky monkey")
+     this.questions
 
    };
 
@@ -29,7 +30,15 @@ class AppContainer{
        console.log('blah');
        fetch(this.url + '/questions')
        .then(resp => resp.json())
-       .then(data => console.log(data))
+
+       //populate the questions and theme properties with the returned data
+       .then(data => {
+              data.forEach(question => {
+              new Question(question.name)
+              });
+
+       })
+
        .catch(err => alert(err));
    
 
