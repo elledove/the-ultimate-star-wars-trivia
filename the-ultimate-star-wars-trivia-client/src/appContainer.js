@@ -2,12 +2,17 @@ class AppContainer{
 
     questions = []
     themes = []
-    url = ""
+    url = "https://localhost:3000/"
    score = {}
 
 
    getQuestions(){
-   // make fetch request to /questions, then call renderQuestions
+       // make fetch request to /questions, then call renderQuestions
+       console.log('blah')
+       fetch(this.url + '/questions')
+       .then(resp => console.log(resp))
+       .catch(err => alert(err))
+   
 
      }
 
