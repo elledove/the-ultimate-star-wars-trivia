@@ -27,15 +27,17 @@ class AppContainer{
 
    getQuestions(){
        // make fetch request to /questions, then call renderQuestions
-       console.log('blah');
        fetch(this.url + '/questions')
        .then(resp => resp.json())
 
        //populate the questions and theme properties with the returned data
        .then(data => {
               data.forEach(question => {
-              new Question(question.name)
+              new Question(question.name, question.theme)
+            
               });
+
+              this.renderQuestions();
 
        })
 
@@ -46,6 +48,10 @@ class AppContainer{
 
    renderQuestions(){
    // creat DOM nodes and insert data into them to render in the DOM 
+   //AppContainer.questions.forEach(question => {
+
+
+   //})
 
   
    };
