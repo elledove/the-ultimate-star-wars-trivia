@@ -12,6 +12,10 @@ Question.destroy_all
 
 person = Theme.create(name: "person")
 films = Theme.create(name: "films")
+spaceships = Theme.create(name: "spaceships")
+species = Theme.create(name: "species")
+vehicles = Theme.create(name: "vehicles")
+planets = Theme.create(name: "planets")
 
 
 
