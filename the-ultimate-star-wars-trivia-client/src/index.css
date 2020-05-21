@@ -1,0 +1,42 @@
+#trivia-container {
+    border: 1px solid black;
+    background-color: white;
+    height: 300px;
+    width: 600px;
+    visibility: hidden;
+  }
+
+  .all-start-buttons {
+    visibility: visible;
+  }
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+.answer-button {
+    height: 50px;
+    width: 275px;
+    margin: 10px;
+    border-radius: 1rem;
+    background: gold;
+}
+
+.top-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+body {
+  background: black;
+}
