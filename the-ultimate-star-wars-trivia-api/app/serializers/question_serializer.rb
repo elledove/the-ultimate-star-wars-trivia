@@ -1,4 +1,4 @@
 class QuestionSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :name, :theme
 end
